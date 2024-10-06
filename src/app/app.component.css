@@ -1,0 +1,98 @@
+/* Center the container and its content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+/* Input section styling */
+.input-section {
+  margin-bottom: 20px;
+}
+
+input[type='number'] {
+  width: 100px;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Seat layout grid */
+.seat-layout {
+  display: grid;
+  grid-template-columns: repeat(7, 50px); /* Adjust column count for rows */
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Seat styling */
+.seat {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #28a745; /* Available seat color */
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seat:hover {
+  background-color: #218838;
+}
+
+.booked {
+  background-color: #dc3545; /* Booked seat color */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.available {
+  background-color: #28a745; /* Available seat color */
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Booked seat info */
+.booked-info {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+.booked-info p {
+  color: #555;
+}
